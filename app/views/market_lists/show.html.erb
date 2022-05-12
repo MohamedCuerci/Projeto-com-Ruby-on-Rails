@@ -1,0 +1,18 @@
+<h1><%= @market_list.name %></h1>
+<p> <%= l @market_list.market_date %> </p>
+
+<%= link_to "Voltar", root_path %>
+<%= link_to "Editar", edit_market_list_path %><br>
+<%= link_to "excluir", market_list_path(@market_list), data: 
+    {
+        turbo_method: :delete,
+        turbo_confirm: "Tem certeza ?"
+    } %>
+
+<h2>Produtos</h2>
+<%= render @market_list.items %>
+
+<hr>
+<h2>Adicionar produto</h2>
+<%= render 'items/form' %>
+

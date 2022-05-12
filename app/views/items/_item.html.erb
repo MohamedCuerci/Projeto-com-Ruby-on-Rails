@@ -1,0 +1,18 @@
+
+<div>
+    <strong>Produto: </strong>
+    <%= item.name %>
+</div>
+
+<div>
+    <strong>Qtde: </strong>
+    <%= item.amount %>
+</div>
+
+<div>
+    <%= link_to "Excluir produto", [item.market_list, item], data: 
+    {
+        turbo_method: :delete,
+        turbo_confirm: "Tem certeza ?"
+    } %>
+</div><br>

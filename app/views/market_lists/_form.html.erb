@@ -1,0 +1,29 @@
+
+<%= form_with model: @market_list do |f| %>
+  
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+    <% @market_list.errors.full_messages_for(:name).each do |message| %>
+        <div><%= message %></div>    
+    <% end %>
+  </div>
+  <br>
+  
+  <div>
+    <%= f.label :market_date %><br>
+    <%= f.date_field :market_date %>
+    <% @market_list.errors.full_messages_for(:market_date).each do |message| %>
+        <div><%= message %></div>
+    <% end %>    
+  </div>
+  <br>
+  
+  <div>
+    <%= f.submit "Salvar" %>
+  </div>
+  
+<% end %>
+
+<br>
+<%= link_to "Voltar", root_path %>

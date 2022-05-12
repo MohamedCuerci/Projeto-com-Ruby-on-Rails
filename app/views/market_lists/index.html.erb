@@ -1,0 +1,18 @@
+<h1>Suas listas de mercado</h1>
+
+<%= link_to 'Nova lista de mercado', new_market_list_path %>
+
+<% contadora = 1 %>
+<% if @market_list.any? %>
+    <ul>
+        <% @market_list.each do |lista| %>
+            <li>
+                <%= contadora %> - 
+                <%= link_to lista.name, lista %> 
+            </li>  
+            <% contadora += 1 %>  
+        <% end %>
+    </ul>
+<% else %>
+    <p>Você ainda não possui nenhuma lista </p>    
+<% end %>

@@ -1,0 +1,17 @@
+
+<p>entrando formulario</p>
+<%= form_with model: [@market_list, @market_list.market_list_items.build ] do |form| %>
+    <p>
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+    </p>
+
+    <p>
+        <%= form.label :amount %>
+        <%= form.number_field :amount %>
+    </p>
+
+    <p> <%= form.submit 'Adicionar' %> </p>
+
+<% end %>
+<p>saindo formulario</p>
