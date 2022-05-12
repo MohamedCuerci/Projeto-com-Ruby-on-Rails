@@ -1,24 +1,12 @@
-# README
+# Projeto do tipo "todo-list" de uma lista de compras
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esse projeto serve apenas como um exemplo da minha prática com uns crud da vida,
+sendo baseado no tutorial do site https://guides.rubyonrails.org/getting_started.html usando exemplos diferentes.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 3.0.4
+* Rails version - 7.0.2
+* Db - SQLite - 1.4
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* How to run - execute o git clone do repositorio e em seguida execute o comando "rails s" pelo terminal. 
